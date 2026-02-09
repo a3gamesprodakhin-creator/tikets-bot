@@ -1,6 +1,5 @@
 import os
 import disnake
-import discord
 from discord.ext import commands
 from config import settings
 from disnake.ext import commands
@@ -40,6 +39,7 @@ async def send(ctx, channel_id, *, message):
 for file in os.listdir("./cogs"):
     if file.endswith(".py"):
         bot.load_extension(f"cogs.{file[:-3]}")
+
 
 
 
