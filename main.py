@@ -1,8 +1,7 @@
 import os
 import disnake
-from discord.ext import commands
-from config import settings
 from disnake.ext import commands
+from config import settings
 
 #  Создается экземпляр класса Bot с префиксом команд "!" и указанными разрешениями.
 intents = disnake.Intents.all()
@@ -44,3 +43,4 @@ for file in os.listdir("./cogs"):
 
 
 bot.run(settings['TOKEN']) #токен из config.py (не нужно писать его сюда)
+
